@@ -6,6 +6,8 @@ RUN mkdir -p /podinfo/
 
 WORKDIR /podinfo
 
+ENV GOPROXY=https://goproxy.cn,direct
+
 COPY . .
 
 RUN go mod download
