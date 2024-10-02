@@ -1,0 +1,591 @@
+{
+  "Name": "api2Handler",
+  "SpanContext": {
+    "TraceID": "15abf3a0a4a89c1f8158c0e6bbd51a4e",
+    "SpanID": "9c25d498c1710bf1",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "Parent": {
+    "TraceID": "15abf3a0a4a89c1f8158c0e6bbd51a4e",
+    "SpanID": "a06d3b50a67d9516",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "SpanKind": 1,
+  "StartTime": "2024-10-02T19:07:44.79858+08:00",
+  "EndTime": "2024-10-02T19:07:44.899756916+08:00",
+  "Attributes": [
+    {
+      "Key": "event",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api2 called"
+      }
+    }
+  ],
+  "Events": null,
+  "Links": null,
+  "Status": {
+    "Code": "Unset",
+    "Description": ""
+  },
+  "DroppedAttributes": 0,
+  "DroppedEvents": 0,
+  "DroppedLinks": 0,
+  "ChildSpanCount": 0,
+  "Resource": [
+    {
+      "Key": "service.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "unknown_service:___go_build_run_go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.language",
+      "Value": {
+        "Type": "STRING",
+        "Value": "go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "opentelemetry"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.30.0"
+      }
+    }
+  ],
+  "InstrumentationScope": {
+    "Name": "api2-tracer",
+    "Version": "",
+    "SchemaURL": ""
+  },
+  "InstrumentationLibrary": {
+    "Name": "api2-tracer",
+    "Version": "",
+    "SchemaURL": ""
+  }
+}
+{
+  "Name": "/",
+  "SpanContext": {
+    "TraceID": "15abf3a0a4a89c1f8158c0e6bbd51a4e",
+    "SpanID": "a06d3b50a67d9516",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "Parent": {
+    "TraceID": "15abf3a0a4a89c1f8158c0e6bbd51a4e",
+    "SpanID": "3039f8f9e8bb3307",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": true
+  },
+  "SpanKind": 2,
+  "StartTime": "2024-10-02T19:07:44.798499+08:00",
+  "EndTime": "2024-10-02T19:07:44.899852958+08:00",
+  "Attributes": [
+    {
+      "Key": "http.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "GET"
+      }
+    },
+    {
+      "Key": "http.scheme",
+      "Value": {
+        "Type": "STRING",
+        "Value": "http"
+      }
+    },
+    {
+      "Key": "net.host.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "localhost"
+      }
+    },
+    {
+      "Key": "net.host.port",
+      "Value": {
+        "Type": "INT64",
+        "Value": 8080
+      }
+    },
+    {
+      "Key": "net.sock.peer.addr",
+      "Value": {
+        "Type": "STRING",
+        "Value": "::1"
+      }
+    },
+    {
+      "Key": "net.sock.peer.port",
+      "Value": {
+        "Type": "INT64",
+        "Value": 64432
+      }
+    },
+    {
+      "Key": "user_agent.original",
+      "Value": {
+        "Type": "STRING",
+        "Value": "Go-http-client/1.1"
+      }
+    },
+    {
+      "Key": "http.target",
+      "Value": {
+        "Type": "STRING",
+        "Value": "/api2"
+      }
+    },
+    {
+      "Key": "net.protocol.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.1"
+      }
+    },
+    {
+      "Key": "http.route",
+      "Value": {
+        "Type": "STRING",
+        "Value": "/api2"
+      }
+    },
+    {
+      "Key": "http.response_content_length",
+      "Value": {
+        "Type": "INT64",
+        "Value": 17
+      }
+    },
+    {
+      "Key": "http.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 200
+      }
+    }
+  ],
+  "Events": null,
+  "Links": null,
+  "Status": {
+    "Code": "Unset",
+    "Description": ""
+  },
+  "DroppedAttributes": 0,
+  "DroppedEvents": 0,
+  "DroppedLinks": 0,
+  "ChildSpanCount": 1,
+  "Resource": [
+    {
+      "Key": "service.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "unknown_service:___go_build_run_go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.language",
+      "Value": {
+        "Type": "STRING",
+        "Value": "go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "opentelemetry"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.30.0"
+      }
+    }
+  ],
+  "InstrumentationScope": {
+    "Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "Version": "0.52.0",
+    "SchemaURL": ""
+  },
+  "InstrumentationLibrary": {
+    "Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "Version": "0.52.0",
+    "SchemaURL": ""
+  }
+}
+{
+  "Name": "HTTP GET",
+  "SpanContext": {
+    "TraceID": "15abf3a0a4a89c1f8158c0e6bbd51a4e",
+    "SpanID": "3039f8f9e8bb3307",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "Parent": {
+    "TraceID": "15abf3a0a4a89c1f8158c0e6bbd51a4e",
+    "SpanID": "b8fb468f66eb7dc6",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "SpanKind": 3,
+  "StartTime": "2024-10-02T19:07:44.79057+08:00",
+  "EndTime": "2024-10-02T19:07:44.900919625+08:00",
+  "Attributes": [
+    {
+      "Key": "http.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "GET"
+      }
+    },
+    {
+      "Key": "http.url",
+      "Value": {
+        "Type": "STRING",
+        "Value": "http://localhost:8080/api2"
+      }
+    },
+    {
+      "Key": "net.peer.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "localhost"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "INT64",
+        "Value": 8080
+      }
+    },
+    {
+      "Key": "http.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 200
+      }
+    },
+    {
+      "Key": "http.response_content_length",
+      "Value": {
+        "Type": "INT64",
+        "Value": 17
+      }
+    }
+  ],
+  "Events": null,
+  "Links": null,
+  "Status": {
+    "Code": "Unset",
+    "Description": ""
+  },
+  "DroppedAttributes": 0,
+  "DroppedEvents": 0,
+  "DroppedLinks": 0,
+  "ChildSpanCount": 0,
+  "Resource": [
+    {
+      "Key": "service.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "unknown_service:___go_build_run_go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.language",
+      "Value": {
+        "Type": "STRING",
+        "Value": "go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "opentelemetry"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.30.0"
+      }
+    }
+  ],
+  "InstrumentationScope": {
+    "Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "Version": "0.52.0",
+    "SchemaURL": ""
+  },
+  "InstrumentationLibrary": {
+    "Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "Version": "0.52.0",
+    "SchemaURL": ""
+  }
+}
+{
+  "Name": "api1Handler",
+  "SpanContext": {
+    "TraceID": "15abf3a0a4a89c1f8158c0e6bbd51a4e",
+    "SpanID": "b8fb468f66eb7dc6",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "Parent": {
+    "TraceID": "15abf3a0a4a89c1f8158c0e6bbd51a4e",
+    "SpanID": "14ee596f3617d288",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "SpanKind": 1,
+  "StartTime": "2024-10-02T19:07:44.790502+08:00",
+  "EndTime": "2024-10-02T19:07:44.901028333+08:00",
+  "Attributes": [
+    {
+      "Key": "event",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api1 called"
+      }
+    },
+    {
+      "Key": "api2.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 200
+      }
+    }
+  ],
+  "Events": null,
+  "Links": null,
+  "Status": {
+    "Code": "Unset",
+    "Description": ""
+  },
+  "DroppedAttributes": 0,
+  "DroppedEvents": 0,
+  "DroppedLinks": 0,
+  "ChildSpanCount": 1,
+  "Resource": [
+    {
+      "Key": "service.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "unknown_service:___go_build_run_go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.language",
+      "Value": {
+        "Type": "STRING",
+        "Value": "go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "opentelemetry"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.30.0"
+      }
+    }
+  ],
+  "InstrumentationScope": {
+    "Name": "api1-tracer",
+    "Version": "",
+    "SchemaURL": ""
+  },
+  "InstrumentationLibrary": {
+    "Name": "api1-tracer",
+    "Version": "",
+    "SchemaURL": ""
+  }
+}
+{
+  "Name": "/",
+  "SpanContext": {
+    "TraceID": "15abf3a0a4a89c1f8158c0e6bbd51a4e",
+    "SpanID": "14ee596f3617d288",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "Parent": {
+    "TraceID": "00000000000000000000000000000000",
+    "SpanID": "0000000000000000",
+    "TraceFlags": "00",
+    "TraceState": "",
+    "Remote": false
+  },
+  "SpanKind": 2,
+  "StartTime": "2024-10-02T19:07:44.790324+08:00",
+  "EndTime": "2024-10-02T19:07:44.901041208+08:00",
+  "Attributes": [
+    {
+      "Key": "http.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "GET"
+      }
+    },
+    {
+      "Key": "http.scheme",
+      "Value": {
+        "Type": "STRING",
+        "Value": "http"
+      }
+    },
+    {
+      "Key": "net.host.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "localhost"
+      }
+    },
+    {
+      "Key": "net.host.port",
+      "Value": {
+        "Type": "INT64",
+        "Value": 8080
+      }
+    },
+    {
+      "Key": "net.sock.peer.addr",
+      "Value": {
+        "Type": "STRING",
+        "Value": "::1"
+      }
+    },
+    {
+      "Key": "net.sock.peer.port",
+      "Value": {
+        "Type": "INT64",
+        "Value": 64430
+      }
+    },
+    {
+      "Key": "user_agent.original",
+      "Value": {
+        "Type": "STRING",
+        "Value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "Key": "http.target",
+      "Value": {
+        "Type": "STRING",
+        "Value": "/api1"
+      }
+    },
+    {
+      "Key": "net.protocol.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.1"
+      }
+    },
+    {
+      "Key": "http.route",
+      "Value": {
+        "Type": "STRING",
+        "Value": "/api1"
+      }
+    },
+    {
+      "Key": "http.response_content_length",
+      "Value": {
+        "Type": "INT64",
+        "Value": 39
+      }
+    },
+    {
+      "Key": "http.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 200
+      }
+    }
+  ],
+  "Events": null,
+  "Links": null,
+  "Status": {
+    "Code": "Unset",
+    "Description": ""
+  },
+  "DroppedAttributes": 0,
+  "DroppedEvents": 0,
+  "DroppedLinks": 0,
+  "ChildSpanCount": 1,
+  "Resource": [
+    {
+      "Key": "service.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "unknown_service:___go_build_run_go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.language",
+      "Value": {
+        "Type": "STRING",
+        "Value": "go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "opentelemetry"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.30.0"
+      }
+    }
+  ],
+  "InstrumentationScope": {
+    "Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "Version": "0.52.0",
+    "SchemaURL": ""
+  },
+  "InstrumentationLibrary": {
+    "Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "Version": "0.52.0",
+    "SchemaURL": ""
+  }
+}
