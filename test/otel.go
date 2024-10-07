@@ -86,7 +86,7 @@ func newExporter() (trace.SpanExporter, error) {
 func NewTraceProvider() (*trace.TracerProvider, error) {
 	//traceExporter, err := stdouttrace.New(
 	//	stdouttrace.WithPrettyPrint())
-	traceExporter, err := newExporter()
+	traceExporter, err := jaeger.New(jaeger.WithCollectorEndpoint(jaeger.WithEndpoint("http://10.78.226.1:32097/api/traces")))
 	if err != nil {
 		return nil, err
 	}
