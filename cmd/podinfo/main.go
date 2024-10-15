@@ -41,6 +41,7 @@ func main() {
 	fs.String("ui-path", "./ui", "UI local path")
 	fs.String("ui-logo", "", "UI logo")
 	fs.String("ui-color", "#34577c", "UI color")
+	fs.String("jaeger-url", "http://10.78.226.1:32097/api/traces", "Jaeger url")
 	fs.String("ui-message", fmt.Sprintf("greetings from podinfo v%v", version.VERSION), "UI message")
 	fs.Bool("h2c", false, "allow upgrading to H2C")
 	fs.Bool("random-delay", false, "between 0 and 5 seconds random delay by default")
@@ -148,6 +149,7 @@ func main() {
 	if err := viper.Unmarshal(&srvCfg); err != nil {
 		logger.Panic("config unmarshal failed", zap.Error(err))
 	}
+	fmt.Println(srvCfg.JaegerUrl)
 
 	// log version and port
 	logger.Info("Starting podinfo",

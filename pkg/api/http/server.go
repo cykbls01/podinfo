@@ -71,6 +71,7 @@ type Config struct {
 	Unready               bool          `mapstructure:"unready"`
 	JWTSecret             string        `mapstructure:"jwt-secret"`
 	CacheServer           string        `mapstructure:"cache-server"`
+	JaegerUrl             string        `mapstructure:"jaeger-url"`
 }
 
 type Server struct {
